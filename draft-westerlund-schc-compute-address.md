@@ -1,7 +1,7 @@
 ---
 title: "SCHC Compute-Address Compression/Decompression Actions for Dynamically Assigned IP Addresses"
 abbrev: "SCHC Compute-Address CDAs"
-docname: draft-westerlund-schc-compute-address-00
+docname: draft-westerlund-schc-compute-address-latest
 category: std
 ipr: trust200902
 area: Internet
