@@ -2023,154 +2023,166 @@ where the device has dynamically assigned IPv6 addresses. The device
 prefix and IID are compressed using comp-addr-prefix and comp-addr-iid
 respectively.<a href="#section-6.4-1" class="pilcrow">¶</a></p>
 <span id="name-example-rule-using-compute-"></span><div id="fig-rule-example">
-<figure id="figure-3">
-          <div id="section-6.4-2.1">
-            <div class="alignLeft art-svg artwork" id="section-6.4-2.1.1">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="336" width="624" viewBox="0 0 624 336" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px" stroke-linecap="round">
-                <path d="M 8,32 L 8,320" fill="none" stroke="black"></path>
-                <path d="M 144,32 L 144,320" fill="none" stroke="black"></path>
-                <path d="M 168,32 L 168,320" fill="none" stroke="black"></path>
-                <path d="M 192,32 L 192,320" fill="none" stroke="black"></path>
-                <path d="M 216,32 L 216,320" fill="none" stroke="black"></path>
-                <path d="M 304,32 L 304,320" fill="none" stroke="black"></path>
-                <path d="M 432,32 L 432,320" fill="none" stroke="black"></path>
-                <path d="M 560,32 L 560,320" fill="none" stroke="black"></path>
-                <path d="M 616,32 L 616,320" fill="none" stroke="black"></path>
-                <path d="M 8,32 L 616,32" fill="none" stroke="black"></path>
-                <path d="M 8,64 L 616,64" fill="none" stroke="black"></path>
-                <path d="M 8,240 L 616,240" fill="none" stroke="black"></path>
-                <path d="M 8,320 L 616,320" fill="none" stroke="black"></path>
-                <circle cx="512" cy="128" r="6" class="closeddot" fill="black"></circle>
-                <circle cx="512" cy="288" r="6" class="closeddot" fill="black"></circle>
-                <circle cx="512" cy="304" r="6" class="closeddot" fill="black"></circle>
-                <g class="text">
-                  <text x="80" y="52">FID</text>
-                  <text x="156" y="52">FL</text>
-                  <text x="180" y="52">FP</text>
-                  <text x="204" y="52">DI</text>
-                  <text x="260" y="52">TV</text>
-                  <text x="364" y="52">MO</text>
-                  <text x="496" y="52">CDA</text>
-                  <text x="588" y="52">Sent</text>
-                  <text x="28" y="84">IPv6</text>
-                  <text x="80" y="84">Version</text>
-                  <text x="160" y="84">4</text>
-                  <text x="176" y="84">1</text>
-                  <text x="204" y="84">Bi</text>
-                  <text x="224" y="84">6</text>
-                  <text x="336" y="84">equal</text>
-                  <text x="476" y="84">not-sent</text>
-                  <text x="28" y="100">IPv6</text>
-                  <text x="84" y="100">DiffServ</text>
-                  <text x="160" y="100">8</text>
-                  <text x="176" y="100">1</text>
-                  <text x="204" y="100">Bi</text>
-                  <text x="224" y="100">0</text>
-                  <text x="336" y="100">equal</text>
-                  <text x="476" y="100">not-sent</text>
-                  <text x="28" y="116">IPv6</text>
-                  <text x="68" y="116">Flow</text>
-                  <text x="112" y="116">Label</text>
-                  <text x="156" y="116">20</text>
-                  <text x="176" y="116">1</text>
-                  <text x="204" y="116">Bi</text>
-                  <text x="224" y="116">0</text>
-                  <text x="336" y="116">equal</text>
-                  <text x="476" y="116">not-sent</text>
-                  <text x="28" y="132">IPv6</text>
-                  <text x="76" y="132">Length</text>
-                  <text x="156" y="132">16</text>
-                  <text x="176" y="132">1</text>
-                  <text x="204" y="132">Bi</text>
-                  <text x="340" y="132">ignore</text>
-                  <text x="476" y="132">compute-</text>
-                  <text x="28" y="148">IPv6</text>
-                  <text x="68" y="148">Next</text>
-                  <text x="116" y="148">Header</text>
-                  <text x="160" y="148">8</text>
-                  <text x="176" y="148">1</text>
-                  <text x="204" y="148">Bi</text>
-                  <text x="228" y="148">17</text>
-                  <text x="336" y="148">equal</text>
-                  <text x="476" y="148">not-sent</text>
-                  <text x="28" y="164">IPv6</text>
-                  <text x="64" y="164">Hop</text>
-                  <text x="104" y="164">Limit</text>
-                  <text x="160" y="164">8</text>
-                  <text x="176" y="164">1</text>
-                  <text x="204" y="164">Bi</text>
-                  <text x="232" y="164">255</text>
-                  <text x="340" y="164">ignore</text>
-                  <text x="476" y="164">not-sent</text>
-                  <text x="28" y="180">IPv6</text>
-                  <text x="88" y="180">DevPrefix</text>
-                  <text x="156" y="180">64</text>
-                  <text x="176" y="180">1</text>
-                  <text x="204" y="180">Up</text>
-                  <text x="368" y="180">comp-addr-prf</text>
-                  <text x="496" y="180">comp-addr-prf</text>
-                  <text x="584" y="180">2</text>
-                  <text x="28" y="196">IPv6</text>
-                  <text x="76" y="196">DevIID</text>
-                  <text x="156" y="196">64</text>
-                  <text x="176" y="196">1</text>
-                  <text x="204" y="196">Up</text>
-                  <text x="368" y="196">comp-addr-iid</text>
-                  <text x="496" y="196">comp-addr-iid</text>
-                  <text x="584" y="196">4</text>
-                  <text x="28" y="212">IPv6</text>
-                  <text x="88" y="212">AppPrefix</text>
-                  <text x="156" y="212">64</text>
-                  <text x="176" y="212">1</text>
-                  <text x="204" y="212">Up</text>
-                  <text x="260" y="212">2001:db8::</text>
-                  <text x="336" y="212">equal</text>
-                  <text x="476" y="212">not-sent</text>
-                  <text x="28" y="228">IPv6</text>
-                  <text x="76" y="228">AppIID</text>
-                  <text x="156" y="228">64</text>
-                  <text x="176" y="228">1</text>
-                  <text x="204" y="228">Up</text>
-                  <text x="232" y="228">::1</text>
-                  <text x="336" y="228">equal</text>
-                  <text x="476" y="228">not-sent</text>
-                  <text x="24" y="260">UDP</text>
-                  <text x="72" y="260">DevPort</text>
-                  <text x="156" y="260">16</text>
-                  <text x="176" y="260">1</text>
-                  <text x="204" y="260">Bi</text>
-                  <text x="236" y="260">5683</text>
-                  <text x="336" y="260">equal</text>
-                  <text x="476" y="260">not-sent</text>
-                  <text x="24" y="276">UDP</text>
-                  <text x="72" y="276">AppPort</text>
-                  <text x="156" y="276">16</text>
-                  <text x="176" y="276">1</text>
-                  <text x="204" y="276">Bi</text>
-                  <text x="236" y="276">5683</text>
-                  <text x="336" y="276">equal</text>
-                  <text x="476" y="276">not-sent</text>
-                  <text x="24" y="292">UDP</text>
-                  <text x="68" y="292">Length</text>
-                  <text x="156" y="292">16</text>
-                  <text x="176" y="292">1</text>
-                  <text x="204" y="292">Bi</text>
-                  <text x="340" y="292">ignore</text>
-                  <text x="476" y="292">compute-</text>
-                  <text x="24" y="308">UDP</text>
-                  <text x="76" y="308">Checksum</text>
-                  <text x="156" y="308">16</text>
-                  <text x="176" y="308">1</text>
-                  <text x="204" y="308">Bi</text>
-                  <text x="340" y="308">ignore</text>
-                  <text x="476" y="308">compute-</text>
-                </g>
-              </svg><a href="#section-6.4-2.1.1" class="pilcrow">¶</a>
-</div>
-</div>
-<figcaption><a href="#figure-3" class="selfRef">Figure 3</a>:
+<table class="center" id="table-1">
+          <caption>
+<a href="#table-1" class="selfRef">Table 1</a>:
 <a href="#name-example-rule-using-compute-" class="selfRef">Example Rule Using Compute-Address CDAs</a>
-          </figcaption></figure>
+          </caption>
+<thead>
+            <tr>
+              <th class="text-left" rowspan="1" colspan="1">FID</th>
+              <th class="text-left" rowspan="1" colspan="1">FL</th>
+              <th class="text-left" rowspan="1" colspan="1">FP</th>
+              <th class="text-left" rowspan="1" colspan="1">DI</th>
+              <th class="text-left" rowspan="1" colspan="1">TV</th>
+              <th class="text-left" rowspan="1" colspan="1">MO</th>
+              <th class="text-left" rowspan="1" colspan="1">CDA</th>
+              <th class="text-left" rowspan="1" colspan="1">Sent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 Version</td>
+              <td class="text-left" rowspan="1" colspan="1">4</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">6</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 DiffServ</td>
+              <td class="text-left" rowspan="1" colspan="1">8</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">0</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 Flow Label</td>
+              <td class="text-left" rowspan="1" colspan="1">20</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">0</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 Length</td>
+              <td class="text-left" rowspan="1" colspan="1">16</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+              <td class="text-left" rowspan="1" colspan="1">ignore</td>
+              <td class="text-left" rowspan="1" colspan="1">compute-*</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 Next Header</td>
+              <td class="text-left" rowspan="1" colspan="1">8</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">17</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 Hop Limit</td>
+              <td class="text-left" rowspan="1" colspan="1">8</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">255</td>
+              <td class="text-left" rowspan="1" colspan="1">ignore</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 DevPrefix</td>
+              <td class="text-left" rowspan="1" colspan="1">64</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Up</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+              <td class="text-left" rowspan="1" colspan="1">comp-addr-prf</td>
+              <td class="text-left" rowspan="1" colspan="1">comp-addr-prf</td>
+              <td class="text-left" rowspan="1" colspan="1">2</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 DevIID</td>
+              <td class="text-left" rowspan="1" colspan="1">64</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Up</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+              <td class="text-left" rowspan="1" colspan="1">comp-addr-iid</td>
+              <td class="text-left" rowspan="1" colspan="1">comp-addr-iid</td>
+              <td class="text-left" rowspan="1" colspan="1">4</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 AppPrefix</td>
+              <td class="text-left" rowspan="1" colspan="1">64</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Up</td>
+              <td class="text-left" rowspan="1" colspan="1">2001:db8::</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">IPv6 AppIID</td>
+              <td class="text-left" rowspan="1" colspan="1">64</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Up</td>
+              <td class="text-left" rowspan="1" colspan="1">::1</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">UDP DevPort</td>
+              <td class="text-left" rowspan="1" colspan="1">16</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">5683</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">UDP AppPort</td>
+              <td class="text-left" rowspan="1" colspan="1">16</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1">5683</td>
+              <td class="text-left" rowspan="1" colspan="1">equal</td>
+              <td class="text-left" rowspan="1" colspan="1">not-sent</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">UDP Length</td>
+              <td class="text-left" rowspan="1" colspan="1">16</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+              <td class="text-left" rowspan="1" colspan="1">ignore</td>
+              <td class="text-left" rowspan="1" colspan="1">compute-*</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">UDP Checksum</td>
+              <td class="text-left" rowspan="1" colspan="1">16</td>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Bi</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+              <td class="text-left" rowspan="1" colspan="1">ignore</td>
+              <td class="text-left" rowspan="1" colspan="1">compute-*</td>
+              <td class="text-left" rowspan="1" colspan="1"> </td>
+            </tr>
+          </tbody>
+        </table>
 </div>
 <p id="section-6.4-3">In this example, the device's IPv6 source prefix is compressed to 2
 bits (supporting up to 4 prefixes) and the IID to 4 bits (supporting
