@@ -4,8 +4,8 @@ abbrev: "SCHC Compute-Address CDAs"
 docname: draft-westerlund-schc-compute-address-latest
 category: std
 ipr: trust200902
-area: Internet
-workgroup: SCHC
+area: "Internet"
+workgroup: "Static Context Header Compression"
 submissiontype: IETF
 keyword:
   - SCHC
