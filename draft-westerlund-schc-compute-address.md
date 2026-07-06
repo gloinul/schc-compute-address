@@ -219,7 +219,7 @@ architectural assumptions:
 {{fig-architecture}} illustrates the relationship between the address
 assignment infrastructure and the SCHC compressor/decompressor.
 
-~~~
+~~~  aasvg
   +--------+          +------------+         +-----------+
   | Device |<-------->|   Network  |<------->|   SCHC    |
   | (UE)   | Address  | Address    | Address | Network   |
@@ -228,8 +228,8 @@ assignment infrastructure and the SCHC compressor/decompressor.
   | Compr/ |          | (DHCP/SMF/ |         |           |
   | Decomp |          |  SLAAC)    |         |           |
   +--------+          +------------+         +-----------+
-      |                                           |
-      |   Both maintain same Address Tables       |
+      |                                            |
+      |    Both maintain same Address Tables       |
       |<==========================================>|
 ~~~
 {: #fig-architecture title="Architecture Overview"}
@@ -295,7 +295,7 @@ Duplicate entries (e.g., two IPv6 addresses sharing the same prefix)
 MUST be deduplicated before indexing. Only unique values appear in the
 table.
 
-~~~
+~~~  aasvg
 Device assigned addresses:
   IPv4: 198.51.100.34
   IPv6: 2001:db8::a38d:1841:2a6f:124b:763e
@@ -484,7 +484,7 @@ where the device has dynamically assigned IPv6 addresses. The device
 prefix and IID are compressed using comp-addr-prefix and comp-addr-iid
 respectively.
 
-~~~
+~~~  aasvg
 +----------------+--+--+--+----------+---------------+---------------+------+
 |       FID      |FL|FP|DI|    TV    |      MO       |      CDA      | Sent |
 +----------------+--+--+--+----------+---------------+---------------+------+
@@ -700,7 +700,7 @@ significant bits of the epoch counter value are placed in the most
 significant N bits of the residual. The DAD_Counter is encoded as an
 M-bit unsigned integer in the remaining bits.
 
-~~~
+~~~  aasvg
   Residual format:
   +----------+-------------+
   |  Epoch   | DAD_Counter |
