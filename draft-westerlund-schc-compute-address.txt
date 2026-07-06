@@ -2,7 +2,7 @@
 
 
 
-SCHC                                                       M. Westerlund
+Static Context Header Compression                          M. Westerlund
 Internet-Draft                                                 L. Corneo
 Intended status: Standards Track                                Ericsson
 Expires: 7 January 2027                                      6 July 2026
@@ -10,7 +10,7 @@ Expires: 7 January 2027                                      6 July 2026
 
  SCHC Compute-Address Compression/Decompression Actions for Dynamically
                          Assigned IP Addresses
-                draft-westerlund-schc-compute-address-00
+              draft-westerlund-schc-compute-address-latest
 
 Abstract
 
@@ -28,6 +28,17 @@ Abstract
    compression to a small index value.  For temporary IPv6 addresses, a
    synchronized generation algorithm enables compression to an epoch and
    counter value.
+
+Discussion Venues
+
+   This note is to be removed before publishing as an RFC.
+
+   Discussion of this document takes place on the Static Context Header
+   Compression Working Group mailing list (schc@ietf.org), which is
+   archived at https://mailarchive.ietf.org/arch/browse/schc/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/gloinul/schc-compute-address.
 
 Status of This Memo
 
@@ -268,8 +279,8 @@ Table of Contents
      | Compr/ |          | (DHCP/SMF/ |         |           |
      | Decomp |          |  SLAAC)    |         |           |
      +--------+          +------------+         +-----------+
-         |                                           |
-         |   Both maintain same Address Tables       |
+         |                                            |
+         |    Both maintain same Address Tables       |
          |<==========================================>|
 
                       Figure 1: Architecture Overview
