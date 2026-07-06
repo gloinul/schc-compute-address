@@ -484,27 +484,22 @@ where the device has dynamically assigned IPv6 addresses. The device
 prefix and IID are compressed using comp-addr-prefix and comp-addr-iid
 respectively.
 
-~~~  aasvg
-+----------------+--+--+--+----------+---------------+---------------+------+
-|       FID      |FL|FP|DI|    TV    |      MO       |      CDA      | Sent |
-+----------------+--+--+--+----------+---------------+---------------+------+
-|IPv6 Version    | 4|1 |Bi|6         | equal         | not-sent      |      |
-|IPv6 DiffServ   | 8|1 |Bi|0         | equal         | not-sent      |      |
-|IPv6 Flow Label |20|1 |Bi|0         | equal         | not-sent      |      |
-|IPv6 Length     |16|1 |Bi|          | ignore        | compute-*     |      |
-|IPv6 Next Header| 8|1 |Bi|17        | equal         | not-sent      |      |
-|IPv6 Hop Limit  | 8|1 |Bi|255       | ignore        | not-sent      |      |
-|IPv6 DevPrefix  |64|1 |Up|          | comp-addr-prf | comp-addr-prf |  2   |
-|IPv6 DevIID     |64|1 |Up|          | comp-addr-iid | comp-addr-iid |  4   |
-|IPv6 AppPrefix  |64|1 |Up|2001:db8::| equal         | not-sent      |      |
-|IPv6 AppIID     |64|1 |Up|::1       | equal         | not-sent      |      |
-+----------------+--+--+--+----------+---------------+---------------+------+
-|UDP DevPort     |16|1 |Bi|5683      | equal         | not-sent      |      |
-|UDP AppPort     |16|1 |Bi|5683      | equal         | not-sent      |      |
-|UDP Length      |16|1 |Bi|          | ignore        | compute-*     |      |
-|UDP Checksum    |16|1 |Bi|          | ignore        | compute-*     |      |
-+----------------+--+--+--+----------+---------------+---------------+------+
-~~~
+| FID | FL | FP | DI | TV | MO | CDA | Sent |
+|---|---|---|---|---|---|---|---|
+| IPv6 Version | 4 | 1 | Bi | 6 | equal | not-sent | |
+| IPv6 DiffServ | 8 | 1 | Bi | 0 | equal | not-sent | |
+| IPv6 Flow Label | 20 | 1 | Bi | 0 | equal | not-sent | |
+| IPv6 Length | 16 | 1 | Bi | | ignore | compute-* | |
+| IPv6 Next Header | 8 | 1 | Bi | 17 | equal | not-sent | |
+| IPv6 Hop Limit | 8 | 1 | Bi | 255 | ignore | not-sent | |
+| IPv6 DevPrefix | 64 | 1 | Up | | comp-addr-prf | comp-addr-prf | 2 |
+| IPv6 DevIID | 64 | 1 | Up | | comp-addr-iid | comp-addr-iid | 4 |
+| IPv6 AppPrefix | 64 | 1 | Up | 2001:db8:: | equal | not-sent | |
+| IPv6 AppIID | 64 | 1 | Up | ::1 | equal | not-sent | |
+| UDP DevPort | 16 | 1 | Bi | 5683 | equal | not-sent | |
+| UDP AppPort | 16 | 1 | Bi | 5683 | equal | not-sent | |
+| UDP Length | 16 | 1 | Bi | | ignore | compute-* | |
+| UDP Checksum | 16 | 1 | Bi | | ignore | compute-* | |
 {: #fig-rule-example title="Example Rule Using Compute-Address CDAs"}
 
 In this example, the device's IPv6 source prefix is compressed to 2
