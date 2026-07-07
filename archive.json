@@ -1,0 +1,83 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2026-07-07T02:08:48.783062+00:00",
+  "repo": "gloinul/schc-compute-address",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOTPCZHs7uTrJu",
+      "title": "Change figure 3 to use table instead of art.",
+      "url": "https://github.com/gloinul/schc-compute-address/pull/1",
+      "state": "MERGED",
+      "author": "gloinul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-07-06T10:54:39Z",
+      "updatedAt": "2026-07-06T10:55:06Z",
+      "baseRepository": "gloinul/schc-compute-address",
+      "baseRefName": "main",
+      "baseRefOid": "0214afefa4ad2359557cc45fed66098019fc1e70",
+      "headRepository": "gloinul/schc-compute-address",
+      "headRefName": "fix-figures",
+      "headRefOid": "5f181276772a0b4b8cfbb4966063bc4bed37b148",
+      "closedAt": "2026-07-06T10:54:56Z",
+      "mergedAt": "2026-07-06T10:54:56Z",
+      "mergedBy": "gloinul",
+      "mergeCommit": {
+        "oid": "d8fa11cbdc23d23d029305b1c393a455017eaaa2"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
